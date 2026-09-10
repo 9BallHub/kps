@@ -11,14 +11,11 @@ aside
     background:#3e4147;
     width:180px;
     float:left;
-    height: 945px;
+    height: 1200px;
     position:absolute;
 }
 
-img
-{
-    width:180px;
-}
+
 
 header
 {
@@ -28,4 +25,31 @@ header
     height:110px;
 
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#rem
+{
+    width:180px;
+}
+
+#logo
+{
+    height:110px;
+    margin-left: 870px;
+}
+#chiken
+{
+height:100px;
+ margin-left: 870px;
 }

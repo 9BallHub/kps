@@ -15,9 +15,11 @@
 <img id="rem" src="sdkk rem.png"/>
 
 
+
+
 </aside>
  <header id="head">
- 
+ <img id="logo" src="sdkk solutions kadr.png"/>
 
 </header>
 
@@ -30,6 +32,9 @@
 
 
 
+<!-- <section id="bottom">
+<img id="chiken" src="chickens.png"/>
+</section>  -->
 
 
 </section>
