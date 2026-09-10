@@ -15,7 +15,7 @@ body
     background:#3e4147;
     width:189px;
     float:left;
-    height:800px;
+    height:950px;
     
 }
 
@@ -46,14 +46,15 @@ float:left;
 
 #pricing
 {
-background: #10659b;
-
+background: #eeff00;
+height:800px;
+}
 
 #chatbox
 {
    
 
-    background:#3e4147;
+    background:#02f82b;
 }
 
 
