@@ -9,17 +9,17 @@
 
 <body>
 <section id="container">
- <header id="head">
- 
 
-</header>
 
 <aside id="side">
 <img id="rem" src="sdkk rem.png"/>
 
 
 </aside>
+ <header id="head">
+ 
 
+</header>
 
 
 

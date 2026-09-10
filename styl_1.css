@@ -2,22 +2,30 @@ body
 {
     font-family:Arial;
     background:#454d5c;
+    margin: 0;
+    padding: 0;
 }
 
 aside
 {
-    background:red;
-    width:200px;
+    background:#3e4147;
+    width:180px;
     float:left;
+    height: 945px;
+    position:absolute;
 }
 
 img
 {
-    width:200px;
+    width:180px;
 }
 
 header
 {
 
     background: #10659b;
+    width:auto;
+    height:110px;
+
+    
 }
