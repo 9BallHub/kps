@@ -1,0 +1,23 @@
+body
+{
+    font-family:Arial;
+    background:#454d5c;
+}
+
+aside
+{
+    background:red;
+    width:200px;
+    float:left;
+}
+
+img
+{
+    width:200px;
+}
+
+header
+{
+
+    background: #10659b;
+}
