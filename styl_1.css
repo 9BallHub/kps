@@ -4,8 +4,7 @@ body
     background:#454d5c;
     margin: 0;
     padding: 0;
-    width:1920px;
-    height:1600px;
+
     color:#52d6d0
     
 
@@ -14,10 +13,10 @@ body
 #side
 {
     background:#3e4147;
-    width:180px;
+    width:189px;
     float:left;
-    height: 1200px;
-    position:absolute;
+    height:800px;
+    
 }
 
 
@@ -26,9 +25,10 @@ body
 {
 
     background: #10659b;
-    width:auto;
-    height:110px;
+    width:1729px;
+    height:100px;
     float:left;
+
 
     
 }
@@ -38,25 +38,21 @@ body
 
 #choice
 {
+width: 1450px;
+height:700px;
+background:red;
 float:left;
-
-height:645px;
-width:1590px;
 }
 
 #pricing
 {
 background: #10659b;
-float:left;
-height:1120px;
-width:330px;
-}
+
 
 #chatbox
 {
    
-    width:1590px;
-    height:200px;
+
     background:#3e4147;
 }
 
@@ -66,20 +62,17 @@ width:330px;
 
 
 
-#rem
-{
-    width:180px;
-}
+
 
 #logo
 {
-    height:110px;
-    margin-left: 600px;
+    height:100px;
 }
 #system
 {
-    height:110px;
-     margin-left:269px;
+    height:100px;
+    
+    
 }
 #chiken
 {

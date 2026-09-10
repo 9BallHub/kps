@@ -12,16 +12,14 @@
 
 
 <section id="side">
-<img id="rem" src="sdkk rem.png"/>
-
-
-
-
+<img id="rem" src="sdkk remm.png"/>
 </section>
 
+
+
  <section id="head">
- <img id="logo" src="sdkk solutions kadr.png"/>
- <a href="czekibreki.png"> <img id="system" src="system.png"> </a>
+ <img id="logo" src="sdkk solutions 100.png"/>
+ <a href="czekibreki.png"> <img id="system" src="system 100.png"> </a>
 
 
 </section>
