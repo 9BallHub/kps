@@ -46,10 +46,15 @@ header
 #logo
 {
     height:110px;
-    margin-left: 870px;
+    margin-left: 600px;
+}
+#system
+{
+    height:110px;
+     margin-left:269px;
 }
 #chiken
 {
 height:100px;
- margin-left: 870px;
+margin-left: 870px;
 }

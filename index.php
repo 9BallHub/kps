@@ -20,6 +20,8 @@
 </aside>
  <header id="head">
  <img id="logo" src="sdkk solutions kadr.png"/>
+ <a href="czekibreki.png"> <img id="system" src="system.png"> </a>
+
 
 </header>
 
