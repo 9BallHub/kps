@@ -8,22 +8,42 @@
 
 
 <body>
-<section id="container">
 
 
-<aside id="side">
+
+<section id="side">
 <img id="rem" src="sdkk rem.png"/>
 
 
 
 
-</aside>
- <header id="head">
+</section>
+
+ <section id="head">
  <img id="logo" src="sdkk solutions kadr.png"/>
  <a href="czekibreki.png"> <img id="system" src="system.png"> </a>
 
 
-</header>
+</section>
+
+<section id="choice">
+SDKKKSDKKSDKK</br>
+SDKK
+</section>
+
+
+
+<section id="pricing">
+content2</br>
+XDDD</br>
+XDDD
+</section>
+
+<section id="chatbox">
+hewwo
+
+</section>
+
 
 
 
@@ -39,7 +59,7 @@
 </section>  -->
 
 
-</section>
+
 </body>
 
 </html>
