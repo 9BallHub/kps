@@ -8,6 +8,8 @@
 
 
 <body>
+<script src="main.js"></script>
+
 
 
 
@@ -25,8 +27,20 @@
 </section>
 
 <section id="choice">
-SDKKKSDKKSDKK</br>
-SDKK
+<form>
+    Jaki proceq bratq
+<select id="cpuchoice">
+<?php
+$connect = mysqli_connect("localhost", "root", "", "sdkkbase");
+$sql1 = "SELECT `Nazwa` FROM `cpu` ORDER BY id DESC;";
+$query1=mysqli_query($connect,$sql1);
+while($row=mysqli_fetch_array($query1))
+{
+echo "<option>".$row['Nazwa']."</option>";
+}
+?>
+</select>
+</form>
 </section>
 
 
@@ -38,7 +52,7 @@ XDDD
 </section>
 
 <section id="chatbox">
-hewwo
+0 75 12 860 
 
 </section>
 
@@ -52,11 +66,13 @@ hewwo
 
 
 
-<!-- <section id="bottom">
+ <section id="bottom">
 <img id="chiken" src="chickens.png"/>
-</section>  -->
+</section> 
 
-
+<?php
+$mysqli_close($connect);
+?>
 
 </body>
 

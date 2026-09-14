@@ -15,7 +15,7 @@ body
     background:#3e4147;
     width:189px;
     float:left;
-    height:950px;
+    height:800px;
     
 }
 
@@ -40,21 +40,26 @@ body
 {
 width: 1450px;
 height:700px;
-background:red;
+
 float:left;
 }
 
 #pricing
 {
-background: #eeff00;
-height:800px;
+
+height:700px;
+width:279px;
+background:#505264;
+float:left;
+box-shadow:5px 10px 30px #8c9099;
 }
 
 #chatbox
 {
-   
-
-    background:#02f82b;
+    clear:both;
+   background:#3e4147;
+    height:150px;
+  
 }
 
 
@@ -77,6 +82,8 @@ height:800px;
 }
 #chiken
 {
+
 height:100px;
 margin-left: 870px;
+background:rgb(153, 224, 111);
 }
