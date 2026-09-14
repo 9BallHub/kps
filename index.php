@@ -31,12 +31,12 @@
     Jaki proceq bratq
 <select id="cpuchoice">
 <?php
-$connect = mysqli_connect("localhost", "root", "", "sdkkbase");
-$sql1 = "SELECT `Nazwa` FROM `cpu` ORDER BY id DESC;";
+$connect = mysqli_connect("localhost", "root", "", "sdkkbase") OR DIE("ZDYCHAJ");
+$sql1 = "SELECT `Name` FROM `cpu` ORDER BY id DESC;";
 $query1=mysqli_query($connect,$sql1);
 while($row=mysqli_fetch_array($query1))
 {
-echo "<option>".$row['Nazwa']."</option>";
+echo "<option>".$row['Name']."</option>";
 }
 ?>
 </select>
@@ -71,7 +71,7 @@ XDDD
 </section> 
 
 <?php
-$mysqli_close($connect);
+mysqli_close($connect);
 ?>
 
 </body>

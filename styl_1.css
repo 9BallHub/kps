@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
 body
 {
-    font-family:Arial;
+      font-family: "Stardos Stencil", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+font-size:30px;
     background:#454d5c;
     margin: 0;
     padding: 0;
@@ -85,5 +90,9 @@ box-shadow:5px 10px 30px #8c9099;
 
 height:100px;
 margin-left: 870px;
+}
+#bottom
+{
 background:rgb(153, 224, 111);
+width:1920px;
 }
