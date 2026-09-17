@@ -26,10 +26,9 @@ FAQ</a></p>
 
  <section id="head">
  <img id="logo" src="sdkk solutions 100.png"/>
- <a href="czekibreki.png"> <img id="system" src="system 100.png"> </a>
- <button onclick="document.body.style.backgroundColor = (document.body.style.backgroundColor === 'white') ? 'black' : 'white'; document.body.style.color = (document.body.style.color === 'black') ? 'white' : 'black';">
-        Change Colors
-    </button>
+ <a href="czekibreki.png"> <img id="system" src="system 100.png"></a>
+ <img src="blackyellow.png" onclick="document.body.classList.toggle('dark-theme')"/>
+
 
 
 

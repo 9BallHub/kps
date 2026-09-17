@@ -15,8 +15,8 @@ font-size:30px;
 
 }
 body.dark-theme {
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: yellow !important;
 }
 
 #side
