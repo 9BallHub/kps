@@ -9,7 +9,11 @@
 
 <body>
 <script src="main.js"></script>
+<?php
+$connect = mysqli_connect("localhost", "root", "", "sdkkbase") OR DIE("ZDYCHAJ");
 
+
+?>
 
 
 
@@ -32,7 +36,7 @@ FAQ</a></p>
 </section>
 
 <section id="choice">
-miqel miqel
+if ur peece is brok, alway rember, workig pece :D
 </section>
 
 

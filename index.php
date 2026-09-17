@@ -57,7 +57,9 @@ XDDD
 </section>
 
 <section id="chatbox">
-0 75 12 860 
+    <section id="subchat">
+Miquel Miqel?
+</section>
 
 </section>
 
