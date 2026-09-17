@@ -13,6 +13,38 @@
     -USER może przejść wyszukiwania dokładej częśi.
    INCLUDE1
     -USER może przejść do dodania dowolnej, niewyszukiwanej części.
- 3 Wyszukaj części z listy
+   INCLUDE2
+     -Aby USER był w stanie otworyć listę, Program musi ją najpierw podać.
+ 3 Wyszukaj części z listy(OPCJONALNE)
   -User wyszukuje dokładny zestaw komponentów, który go interesuje
   -Wyszukiwanie jest dokonane poprzez przewijanie selectów.
+   EXCLUDE1
+    -USER może wybrać dowolną części bez dokładnego wyszukiwania.
+   INCLUDE1
+    -USER przechodzi do dodawania komponentów.
+ 4 Dodaj żądane komponenty do listy
+  -USER wybiera zestaw części, których zamierza użyć do przyszłego zbudowania komputera.
+    INCLUDE1
+     -Aby kontynuować działalność programu po otworzeniu listy,
+      USER jest zobowiązany do wybrania części, nawęt przy doborze losowym.
+    INCLUDE2
+     -Po wyszukaniu poprawnych części user będzie zobowiązany wybrać je w Selectach.
+    INCLUDE3
+     -Stworzona przez użytkownika lista części musi zostać zwalidowana przez PROGRAM.
+ 5 Zwaliduj dobór komponentów
+  -PROGRAM sprawdza czy komponenty podane przez USERa są ze sobą kompatybilne.
+   INCLUDE1 
+    -PROGRAM musi pobrać podane przez USERA części przed walidacją.
+ 6 Sporządź gotowy projekt
+  -Na podstawie udanej walidacji, gotowa lista zostaje spisana, lącznie z przybliżoną ceną zestawu.
+    INCLUDE1
+     -sporządzona lista musi zostać przesłana
+ 7 Zwróć gotowy projekt
+   - PROGRAM wyświetla USERowi zkończony projekt i jego cenę.
+      INCLUDE1
+       -Projekt musi zostać sporządony przed wyświetleniem.
+ 8 Zarządzanie katalogiem części
+  -PROGRAM przetrzymuje w bazie danych części użyte w procesie doboru komponentów przez USERa
+   INCLUDE1
+    -pozwala na otworzenie listy części przez USERa
+
