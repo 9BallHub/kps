@@ -18,8 +18,8 @@
 <img id="rem" src="sdkk remm.png"/></br></br>
 </a>
 <p><a href="faq.php">
-FAQ</a></p>
 
+FAQ</a></p>
 </section>
 
 
@@ -32,20 +32,7 @@ FAQ</a></p>
 </section>
 
 <section id="choice">
-<form>
-    Jaki proceq bratq
-<select id="cpuchoice">
-<?php
-$connect = mysqli_connect("localhost", "root", "", "sdkkbase") OR DIE("ZDYCHAJ");
-$sql1 = "SELECT `Name` FROM `cpu` ORDER BY id DESC;";
-$query1=mysqli_query($connect,$sql1);
-while($row=mysqli_fetch_array($query1))
-{
-echo "<option>".$row['Name']."</option>";
-}
-?>
-</select>
-</form>
+miqel miqel
 </section>
 
 
