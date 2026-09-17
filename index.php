@@ -29,6 +29,7 @@ FAQ</a></p>
  <a href="czekibreki.png"> <img id="system" src="system 100.png"> </a>
 
 
+
 </section>
 
 <section id="choice">
@@ -57,8 +58,9 @@ XDDD
 </section>
 
 <section id="chatbox">
-    <section id="subchat">
-Miquel Miqel?
+    Miquel Miqel?
+<section id="boxbox">
+Create a square here
 </section>
 
 </section>
