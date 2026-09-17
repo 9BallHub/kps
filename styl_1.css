@@ -14,7 +14,10 @@ font-size:30px;
     
 
 }
-
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
 
 #side
 {
