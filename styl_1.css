@@ -25,7 +25,14 @@ body.dark-theme {
     width:189px;
     float:left;
     height:800px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.65;
+    text-decoration:none;
     
+}
+#side:hover
+{
+opacity:1;
 }
 
 
@@ -88,10 +95,12 @@ margin-left: 870px;
 }
 #boxbox
 {
- margin-left:100px;
- height:50px;
- width:150px;
- background:red;
+margin-top:10px;
+ margin-left:190px;
+ height:130px;
+ width:1450px;
+ background:#525b6b;
+ border-radius: 10px 10px 10px 10px;
 }
 
 #bottom

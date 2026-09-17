@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>SDKK</title>
 <link rel="stylesheet" href="styl_1.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 

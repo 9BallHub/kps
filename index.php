@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>SDKK</title>
 <link rel="stylesheet" href="styl_1.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 
@@ -15,7 +16,7 @@
 
 <section id="side">
 <a href="index.php">
-<img id="rem" src="sdkk remm.png"/></br></br>
+<img id="remil" src="sdkk remm.png"/></br></br>
 </a>
 <p><a href="faq.php">
 FAQ</a></p>
@@ -60,7 +61,7 @@ XDDD
 </section>
 
 <section id="chatbox">
-    Miquel Miqel?
+ 
 <section id="boxbox">
 Create a square here
 </section>

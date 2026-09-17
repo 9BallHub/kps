@@ -1,0 +1,18 @@
+1 Sprawdź sekcje FAQ (OPCJONALNE)
+-naciśnięcie na napis "FAQ" w lewym menu ekranu transportuje użytkownika na oddzielną stronę.
+-USER otrzymuje dostęp do 3 list. 
+ (
+    1.lista dająca USERowi ogólną wiedzę dotyczącą doboru komponentów komputerowych
+    2.Instrukcja krok po kroku ucząca budowy komputera.
+    3.Lista programów i porad dotyczących przygotowania systemu i debloatu.
+ )
+ -na podstawie tych informacji USER będzie gotowy do zbudowania komputera i przystąpienia do doboru części.
+ 2 Otwórz liste komponentów
+ -USER otrzymuje dostęp do pól wyboru zawierających biblioteke różnych komponentów.
+   EXCLUDE1
+    -USER może przejść wyszukiwania dokładej częśi.
+   INCLUDE1
+    -USER może przejść do dodania dowolnej, niewyszukiwanej części.
+ 3 Wyszukaj części z listy
+  -User wyszukuje dokładny zestaw komponentów, który go interesuje
+  -Wyszukiwanie jest dokonane poprzez przewijanie selectów.
