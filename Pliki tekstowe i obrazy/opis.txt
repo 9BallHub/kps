@@ -13,8 +13,6 @@
     -USER może przejść wyszukiwania dokładej częśi.
    INCLUDE1
     -USER może przejść do dodania dowolnej, niewyszukiwanej części.
-   INCLUDE2
-     -Aby USER był w stanie otworyć listę, Program musi ją najpierw podać.
  3 Wyszukaj części z listy(OPCJONALNE)
   -User wyszukuje dokładny zestaw komponentów, który go interesuje
   -Wyszukiwanie jest dokonane poprzez przewijanie selectów.
@@ -38,13 +36,11 @@
  6 Sporządź gotowy projekt
   -Na podstawie udanej walidacji, gotowa lista zostaje spisana, lącznie z przybliżoną ceną zestawu.
     INCLUDE1
-     -sporządzona lista musi zostać przesłana
- 7 Zwróć gotowy projekt
+     -sporządzona lista musi zostać wyświetlona
+ 7 Wyświetl gotowy projekt
    - PROGRAM wyświetla USERowi zkończony projekt i jego cenę.
       INCLUDE1
        -Projekt musi zostać sporządony przed wyświetleniem.
  8 Zarządzanie katalogiem części
-  -PROGRAM przetrzymuje w bazie danych części użyte w procesie doboru komponentów przez USERa
-   INCLUDE1
-    -pozwala na otworzenie listy części przez USERa
-
+  -Baza danych przetrzymuje w bazie danych części użyte w procesie doboru komponentów przez USERa
+  
