@@ -36,8 +36,9 @@ FAQ</a></p>
 </section>
 
 <section id="choice">
+<section id="subchoice">
 <form>
-    Jaki proceq bratq
+    Procesor
 <select id="cpuchoice">
 <?php
 $connect = mysqli_connect("localhost", "root", "", "sdkkbase") OR DIE("ZDYCHAJ");
@@ -51,6 +52,7 @@ echo "<option>".$row['Name']." ".$row['socket']."</option>";
 </select>
 </form>
 </section>
+</section>
 
 
 
@@ -63,7 +65,78 @@ XDDD
 <section id="chatbox">
  
 <section id="boxbox">
-Create a square here
+    <?php
+
+// Specific answers
+$specificAnswers = [
+    "Hello" => "World",
+    "bad apple" => "Nagareteku toki no naka de demo kedarusa ga hora guruguru mawatte Watashi kara hanareru kokoro mo mienai wa sou shiranai type shit",
+    "co?" => "kto?",
+    "cpu" => "intel radeon 6090",
+    "gpu" => "Intel arc only cuh",
+    "how to build a pc" =>"step one: uninstall warthunder, step two: get a therapy, step last: build konkuter",
+    "do you rember" => "Tweny first night sember, never forget ttimes :D",
+    "sdkk" => "sdkk"
+];
+
+// Random answers for anything that isn't specifically defined
+$randomAnswers = [
+    "Sounds good!",
+    "Are you sure?",
+    "Consider AMD",
+    "Should've brought a bigger GPU.",
+    "Interesting choice!",
+    "Zawiodłem się na tobie",
+    "Im Bored.exe",
+    "a fat feminist is smarter than that",
+    "Yes",
+    "HELL NAH"
+
+];
+
+$result = "";
+$image = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $input = trim($_POST["myInput"] ?? "");
+
+    if ($input !== "") {
+
+        // Specific text answer
+        if (array_key_exists($input, $specificAnswers)) {
+            $result = $specificAnswers[$input];
+        } else {
+            $result = $randomAnswers[array_rand($randomAnswers)];
+        }
+
+        // Specific image
+        if (strtolower($input) === "bad apple") {
+            $image = "bad apple.gif";
+        }
+    }
+}
+?>
+
+<form method="POST">
+    <input type="text" name="myInput" placeholder="Ask the magic eight ball">
+    <button type="submit">Generate</button>
+</form>
+
+<section id="answers">
+    <?php if ($result !== ""): ?>
+        <p><?php echo htmlspecialchars($result); ?></p>
+    <?php endif; ?>
+</section>
+
+<section id="pictures">
+    <?php if ($image !== ""): ?>
+        <img 
+            src="<?php echo htmlspecialchars($image); ?>" 
+            alt="Apple"
+            style="max-width: 100px;"
+        >
+    <?php endif; ?>
+</section>
 </section>
 
 </section>
