@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Wrz 24, 2026 at 09:09 AM
+-- Generation Time: Wrz 28, 2026 at 12:48 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -89,6 +89,38 @@ INSERT INTO `gpu` (`id`, `producent`, `model`, `cena`) VALUES
 (10, 'Intel', 'ASRock Arc B580 Challenger OC 12GB', '1600'),
 (11, 'Intel', 'Intel Arc Pro B50 16GB', '2300');
 
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `motherboard`
+--
+
+CREATE TABLE `motherboard` (
+  `id` int(11) NOT NULL,
+  `producent` varchar(200) NOT NULL,
+  `Nazwa` varchar(200) NOT NULL,
+  `socket` varchar(200) NOT NULL,
+  `cena` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `motherboard`
+--
+
+INSERT INTO `motherboard` (`id`, `producent`, `Nazwa`, `socket`, `cena`) VALUES
+(1, 'MSI', 'MSI B760 GAMING PLUS WiFi', 'LGA1700', '620'),
+(2, 'Gigabyte', 'Gigabyte Z790 D', 'LGA1700', '675'),
+(3, 'ASRock', 'ASRock H610M-HDV/M.2+ D5', 'LGA1700', '280'),
+(4, 'Gigabyte', 'Gigabyte H510M S2H V3', 'LGA1200', '240'),
+(5, 'ASUS', 'ASUS ROG STRIX B560-E GAMING WIFI', 'LGA1200', '429'),
+(6, 'Gigabyte', 'Gigabyte Z590 AORUS PRO AX', 'LGA1200', '1000'),
+(7, 'Asus', 'ASUS B650E MAX GAMING WIFI', 'AM5', '560'),
+(8, 'Asus', 'ASUS TUF GAMING B850-PLUS WIFI', 'AM5', '910'),
+(9, 'Gigabyte', 'Gigabyte X870 AORUS ELITE WIFI7', 'AM5', '1140'),
+(10, 'Gigabyte', 'Gigabyte B550 AORUS ELITE AX V2', 'AM4', '540'),
+(11, 'MSI', 'MSI A520M PRO', 'AM4', '275'),
+(12, 'ASUS', 'ASUS TUF GAMING B550M-PLUS', 'AM4', '609');
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -106,6 +138,12 @@ ALTER TABLE `gpu`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeksy dla tabeli `motherboard`
+--
+ALTER TABLE `motherboard`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -120,6 +158,12 @@ ALTER TABLE `cpu`
 --
 ALTER TABLE `gpu`
   MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `motherboard`
+--
+ALTER TABLE `motherboard`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
