@@ -76,7 +76,11 @@ $specificAnswers = [
     "gpu" => "Intel arc only cuh",
     "how to build a pc" =>"step one: uninstall warthunder, step two: get a therapy, step last: build konkuter",
     "do you rember" => "Tweny first night sember, never forget ttimes :D",
-    "sdkk" => "sdkk"
+    "sdkk" => "sdkk",
+    "yo mama" => "so stupid, she tried to buy XBOX LIVEEEEEEEEEEEEEEEEEEE",
+    "what is your gender" => "im a mekanik",
+    "amd or intel" => "intel",
+    "intel or amd" => "ammd"
 ];
 
 // Random answers for anything that isn't specifically defined
@@ -89,8 +93,10 @@ $randomAnswers = [
     "Zawiodłem się na tobie",
     "Im Bored.exe",
     "a fat feminist is smarter than that",
+    "nah bro intel arc",
     "Yes",
-    "HELL NAH"
+    "HELL NAH",
+    "consider the following- Open the door *gently*"
 
 ];
 
@@ -118,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <form method="POST">
-    <input type="text" name="myInput" placeholder="Ask the magic eight ball">
+    <input type="text" name="myInput" placeholder="Ask the magic 8ball">
     <button type="submit">Generate</button>
 </form>
 
