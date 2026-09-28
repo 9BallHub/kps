@@ -21,6 +21,10 @@
 <p><a href="faq.php">
 FAQ</a></p>
 
+<section id="advert">
+ <a href="https://www.youtube.com/watch?v=UP1mKveeNIA"> <img id="adve" src="adv.png" /></a>
+    </section>
+
 </section>
 
 
@@ -50,6 +54,31 @@ echo "<option>".$row['Name']." ".$row['socket']."</option>";
 }
 ?>
 </select>
+</br>
+Płyta Głowna
+<select id="mbchoice">
+<?php
+$sql2 = "SELECT `Nazwa`,`socket`,`cena` FROM `motherboard` ORDER BY `socket` DESC;";
+$query2=mysqli_query($connect,$sql2);
+while($row=mysqli_fetch_array($query2))
+{
+echo "<option>".$row['Nazwa']." ".$row['socket']."</option>";
+}
+?>
+</select>
+</br>
+Procesor graficzny
+<select id="mbchoice">
+<?php
+$sql3 = "SELECT `model`,`producent` FROM `gpu` ORDER BY `producent` DESC;";
+$query3=mysqli_query($connect,$sql3);
+while($row=mysqli_fetch_array($query3))
+{
+echo "<option>".$row['producent']." ".$row['model']."</option>";
+}
+?>
+</select>
+
 </form>
 </section>
 </section>
@@ -145,7 +174,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </section>
 </section>
 
+
 </section>
+
 
 
 
@@ -166,5 +197,5 @@ mysqli_close($connect);
 ?>
 
 </body>
-
+<!-- do you ever like uhhh uhm uh i- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm BEEP BEEP BEEEEEEEEEEEEEEEEEEEP -->
 </html>
