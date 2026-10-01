@@ -10,6 +10,72 @@
 
 <body>
 <script src="main.js"></script>
+    <?php
+
+// Specific answers
+$specificAnswers = [
+    "Hello" => "World",
+    "bad apple" => "Nagareteku toki no naka de demo kedarusa ga hora guruguru mawatte Watashi kara hanareru kokoro mo mienai wa sou shiranai type shit",
+    "co?" => "kto?",
+    "cpu" => "intel radeon 6090",
+    "gpu" => "Intel arc only cuh",
+    "how to build a pc" =>"step one: uninstall warthunder, step two: get a therapy, step last: build konkuter",
+    "do you rember" => "Tweny first night sember, never forget ttimes :D",
+    "sdkk" => "sdkk",
+    "yo mama" => "so stupid, she tried to buy XBOX LIVEEEEEEEEEEEEEEEEEEE",
+    "what is your gender" => "im a mekanik",
+    "amd or intel" => "intel",
+    "intel or amd" => "amd",
+    "hot man" => "https://www.instagram.com/p/C5hnkaIoU3j/",
+    "praca" => "GET A JOB NIGGA"
+];
+
+// Random answers for anything that isn't specifically defined
+$randomAnswers = [
+    "Sounds good!",
+    "Are you sure?",
+    "Consider AMD",
+    "Should've brought a bigger GPU.",
+    "Interesting choice!",
+    "Zawiodłem się na tobie",
+    "Im Bored.exe",
+    "a fat feminist is smarter than that",
+    "nah bro intel arc",
+    "Yes",
+    "HELL NAH",
+    "consider the following- Open the door *gently*",
+    "try hotman"
+
+];
+
+$result = "";
+$image = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $input = trim($_POST["myInput"] ?? "");
+
+    if ($input !== "") {
+
+        // Specific text answer
+        if (array_key_exists($input, $specificAnswers)) {
+            $result = $specificAnswers[$input];
+        } else {
+            $result = $randomAnswers[array_rand($randomAnswers)];
+        }
+
+        // Specific image
+        if (strtolower($input) === "bad apple") {
+            $image = "bad apple.gif";
+        }
+        if (strtolower($input) === "hot man") {
+            $image = "hotlettuce.png";
+        }
+        if (strtolower($input) === "praca") {
+            $image = "job.png";
+        }
+    }
+}
+?>
 
 
 
@@ -22,7 +88,7 @@
 FAQ</a></p>
 
 <section id="advert">
- <a href="https://www.youtube.com/watch?v=UP1mKveeNIA"> <img id="adve" src="adv.png" /></a>
+ <a href="https://www.youtube.com/watch?v=UP1mKveeNIA" target="_blank"> <img id="adve" src="adv.png" /></a>
     </section>
 
 </section>
@@ -40,6 +106,15 @@ FAQ</a></p>
 </section>
 
 <section id="choice">
+
+
+
+
+
+
+
+
+
 <section id="subchoice">
 <form>
     Procesor
@@ -78,9 +153,37 @@ echo "<option>".$row['producent']." ".$row['model']."</option>";
 }
 ?>
 </select>
+</br>
+
+Chłodzenie CPU
+
+<select id="coolerchoice">
+    <?php
+$sql4 = "SELECT `Nazwa`,`producent`,`typ` FROM `cpucooler` ORDER BY `typ` DESC;";
+$query4=mysqli_query($connect,$sql4);
+while($row=mysqli_fetch_array($query4))
+{
+echo "<option>".$row['Nazwa']." ".$row['model']." ".$row['typ']."</option>";
+}
+?>
+
+
+</select>
 
 </form>
 </section>
+<section id="obrazki">
+
+<?php if ($image !== ""): ?>
+        <img 
+            class="easteregg"
+            src="<?php echo htmlspecialchars($image); ?>" 
+            alt="Apple"
+            style="width: 400px;"
+        >
+    <?php endif; ?>
+</section>
+
 </section>
 
 
@@ -94,63 +197,7 @@ XDDD
 <section id="chatbox">
  
 <section id="boxbox">
-    <?php
 
-// Specific answers
-$specificAnswers = [
-    "Hello" => "World",
-    "bad apple" => "Nagareteku toki no naka de demo kedarusa ga hora guruguru mawatte Watashi kara hanareru kokoro mo mienai wa sou shiranai type shit",
-    "co?" => "kto?",
-    "cpu" => "intel radeon 6090",
-    "gpu" => "Intel arc only cuh",
-    "how to build a pc" =>"step one: uninstall warthunder, step two: get a therapy, step last: build konkuter",
-    "do you rember" => "Tweny first night sember, never forget ttimes :D",
-    "sdkk" => "sdkk",
-    "yo mama" => "so stupid, she tried to buy XBOX LIVEEEEEEEEEEEEEEEEEEE",
-    "what is your gender" => "im a mekanik",
-    "amd or intel" => "intel",
-    "intel or amd" => "ammd"
-];
-
-// Random answers for anything that isn't specifically defined
-$randomAnswers = [
-    "Sounds good!",
-    "Are you sure?",
-    "Consider AMD",
-    "Should've brought a bigger GPU.",
-    "Interesting choice!",
-    "Zawiodłem się na tobie",
-    "Im Bored.exe",
-    "a fat feminist is smarter than that",
-    "nah bro intel arc",
-    "Yes",
-    "HELL NAH",
-    "consider the following- Open the door *gently*"
-
-];
-
-$result = "";
-$image = "";
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $input = trim($_POST["myInput"] ?? "");
-
-    if ($input !== "") {
-
-        // Specific text answer
-        if (array_key_exists($input, $specificAnswers)) {
-            $result = $specificAnswers[$input];
-        } else {
-            $result = $randomAnswers[array_rand($randomAnswers)];
-        }
-
-        // Specific image
-        if (strtolower($input) === "bad apple") {
-            $image = "bad apple.gif";
-        }
-    }
-}
-?>
 
 <form method="POST">
     <input type="text" name="myInput" placeholder="Ask the magic 8ball">
@@ -161,7 +208,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php if ($result !== ""): ?>
         <p><?php echo htmlspecialchars($result); ?></p>
     <?php endif; ?>
-</section>
+
 
 <section id="pictures">
     <?php if ($image !== ""): ?>
@@ -171,6 +218,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             style="max-width: 100px;"
         >
     <?php endif; ?>
+</section>
 </section>
 </section>
 

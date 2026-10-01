@@ -66,7 +66,7 @@ float:left;
 }
 #subchoice
 {
-width:1450px;
+width:650px;
 padding:20px;
 
 }
@@ -129,3 +129,12 @@ float:left;
 width:189px;
 height:189px;
 }
+
+#obrazki
+{
+float:right;
+
+
+}
+
+
