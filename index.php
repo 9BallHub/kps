@@ -44,7 +44,7 @@ $randomAnswers = [
     "Yes",
     "HELL NAH",
     "consider the following- Open the door *gently*",
-    "try hotman"
+    "try `hot man`"
 
 ];
 
@@ -164,6 +164,20 @@ $query4=mysqli_query($connect,$sql4);
 while($row=mysqli_fetch_array($query4))
 {
 echo "<option>".$row['Nazwa']." ".$row['model']." ".$row['typ']."</option>";
+}
+?>
+
+
+</select>
+</br>
+Kości RAM 
+<select id="ramchoice">
+    <?php
+$sql5 = "SELECT `Nazwa`,`producent`,`ddr` FROM `ram` ORDER BY `ddr` DESC;";
+$query5=mysqli_query($connect,$sql5);
+while($row=mysqli_fetch_array($query5))
+{
+echo "<option>".$row['Nazwa']." ".$row['ddr']."</option>";
 }
 ?>
 
