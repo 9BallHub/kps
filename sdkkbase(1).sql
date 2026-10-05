@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Wrz 28, 2026 at 12:48 PM
+-- Generation Time: Paź 01, 2026 at 12:52 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -58,6 +58,35 @@ INSERT INTO `cpu` (`id`, `Producent`, `Name`, `socket`, `Cena`) VALUES
 (16, 'AMD', 'AMD Ryzen 5 9600', 'AM5', '870'),
 (17, 'AMD', 'AMD Ryzen 5 9600X', 'AM5', '750'),
 (18, 'AMD', 'AMD Ryzen 9 9900X3D', 'AM5', '2250');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `cpucooler`
+--
+
+CREATE TABLE `cpucooler` (
+  `id` int(200) NOT NULL,
+  `Nazwa` varchar(200) NOT NULL,
+  `Producent` varchar(200) NOT NULL,
+  `typ` varchar(200) NOT NULL,
+  `cena` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `cpucooler`
+--
+
+INSERT INTO `cpucooler` (`id`, `Nazwa`, `Producent`, `typ`, `cena`) VALUES
+(1, 'MSI MAG Core Liquid A13 240 ARGB 2x120mm', 'MSI', 'AIO', '260'),
+(2, 'ENDORFY Navis F360 3x120mm', 'ENDORFY', 'AIO', '280'),
+(3, 'ASUS PRIME LC 240 ARGB 2x120mm', 'ASUS', 'AIO', '480'),
+(4, 'Deepcool LD240 ARGB 2x120mm', 'Deepcool', 'AIO', '369'),
+(5, 'Noctua NH-U14S 140mm', 'Noctua', 'radiator', '480'),
+(6, 'be quiet! Pure Rock Pro 3 2x120mm', 'be quiet!', 'radiator', '209'),
+(7, 'ENDORFY Fortis 5 Black ARGB 140mm', 'ENDORFY', 'radiator', '260'),
+(8, 'Arctic Freezer 8A 100mm', 'Arctic Freezer', 'radiator', '80'),
+(9, 'Thermalright Peerless Assassin 120 SE 120mm', 'Thermalright', 'radiator', '190');
 
 -- --------------------------------------------------------
 
@@ -121,6 +150,36 @@ INSERT INTO `motherboard` (`id`, `producent`, `Nazwa`, `socket`, `cena`) VALUES
 (11, 'MSI', 'MSI A520M PRO', 'AM4', '275'),
 (12, 'ASUS', 'ASUS TUF GAMING B550M-PLUS', 'AM4', '609');
 
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `ram`
+--
+
+CREATE TABLE `ram` (
+  `id` int(200) NOT NULL,
+  `Nazwa` varchar(200) NOT NULL,
+  `producent` varchar(200) NOT NULL,
+  `cena` varchar(200) NOT NULL,
+  `ddr` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `ram`
+--
+
+INSERT INTO `ram` (`id`, `Nazwa`, `producent`, `cena`, `ddr`) VALUES
+(1, 'Kingston FURY 128GB (2x64GB) 5600 CL36 Beast RGB', 'Kingston', '10500', 'DDR5'),
+(2, 'GOODRAM 16GB (1x16GB) 7600 CL36 IRDM', 'GOODRAM', '1560', 'DDR5'),
+(3, 'Lexar 32GB (2x16GB) 6000 CL30 Ares RGB', 'Lexar', '2900', 'DDR5'),
+(4, 'Patriot 32GB (2x16GB) 6000MHz CL36 VIPER VENOM', 'Patriot', '2310', 'DDR5'),
+(5, 'Patriot 64GB (2x32GB) 6400MHz CL32 Viper VENOM', 'Patriot', '5400', 'DDR5'),
+(6, 'Corsair 16GB (2x8GB) 3200MHz CL16 Vengeance RGB RS', 'Corsair', '720', 'DDR4'),
+(7, 'GOODRAM 32GB(2x16GB) 3600 CL18 Rival Deep Black', 'GOODRAM', '1570', 'DDR4'),
+(8, 'Corsair 32GB (2x16GB) 3200MHz CL16 Vengeance LPX ', 'Corsair', '1230', 'DDR4'),
+(9, 'Kingston FURY 16GB (2x8GB) 3200MHz CL16', 'Kingston', '910', 'DDR4'),
+(10, 'Crucial 64GB (2x32GB) 3200MHz CL22 Pro', 'Crucial', '2790', 'DDR4');
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -129,6 +188,12 @@ INSERT INTO `motherboard` (`id`, `producent`, `Nazwa`, `socket`, `cena`) VALUES
 -- Indeksy dla tabeli `cpu`
 --
 ALTER TABLE `cpu`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeksy dla tabeli `cpucooler`
+--
+ALTER TABLE `cpucooler`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -144,6 +209,12 @@ ALTER TABLE `motherboard`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeksy dla tabeli `ram`
+--
+ALTER TABLE `ram`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -152,6 +223,12 @@ ALTER TABLE `motherboard`
 --
 ALTER TABLE `cpu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `cpucooler`
+--
+ALTER TABLE `cpucooler`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `gpu`
@@ -164,6 +241,12 @@ ALTER TABLE `gpu`
 --
 ALTER TABLE `motherboard`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `ram`
+--
+ALTER TABLE `ram`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
