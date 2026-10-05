@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Paź 01, 2026 at 12:52 PM
+-- Generation Time: Paź 05, 2026 at 11:59 AM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -153,6 +153,32 @@ INSERT INTO `motherboard` (`id`, `producent`, `Nazwa`, `socket`, `cena`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `psu`
+--
+
+CREATE TABLE `psu` (
+  `id` int(200) NOT NULL,
+  `Nazwa` varchar(200) NOT NULL,
+  `producent` varchar(200) NOT NULL,
+  `moc` varchar(200) NOT NULL,
+  `cena` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `psu`
+--
+
+INSERT INTO `psu` (`id`, `Nazwa`, `producent`, `moc`, `cena`) VALUES
+(1, 'ENDORFY Vero L6 750W 80 Plus Bronze', 'ENDORFY', '750W', '315'),
+(2, 'Gigabyte UD850GM PG5 V2 850W 80 Plus Gold', 'Gigabyte', '850W', '420'),
+(3, 'Gigabyte UD750GM PG5 V2 750W 80 Plus Gold', 'Gigabyte', '750W', '375'),
+(4, 'Corsair RM850x 850W 80 Plus Gold', 'Corsair', '750W', '650'),
+(5, 'FSP/Fortron PTM PRO 1350W 80 Plus Plat', 'FSP', '1350W', '520'),
+(6, 'be quiet! Pure Power 13 M 1000W 80 Plus Gold', 'be quiet!', '1000W', '650');
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `ram`
 --
 
@@ -179,6 +205,58 @@ INSERT INTO `ram` (`id`, `Nazwa`, `producent`, `cena`, `ddr`) VALUES
 (8, 'Corsair 32GB (2x16GB) 3200MHz CL16 Vengeance LPX ', 'Corsair', '1230', 'DDR4'),
 (9, 'Kingston FURY 16GB (2x8GB) 3200MHz CL16', 'Kingston', '910', 'DDR4'),
 (10, 'Crucial 64GB (2x32GB) 3200MHz CL22 Pro', 'Crucial', '2790', 'DDR4');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `ssd`
+--
+
+CREATE TABLE `ssd` (
+  `id` int(200) NOT NULL,
+  `Nazwa` varchar(200) NOT NULL,
+  `producent` varchar(200) NOT NULL,
+  `pojemnosc` varchar(200) NOT NULL,
+  `cena` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `ssd`
+--
+
+INSERT INTO `ssd` (`id`, `Nazwa`, `producent`, `pojemnosc`, `cena`) VALUES
+(1, 'Kingston 1TB M.2 PCIe Gen4 NVMe KC3000', 'Kingston', '1TB', '880'),
+(2, 'Samsung 1TB M.2 PCIe Gen4 NVMe 990 PRO', 'Samsung', '1TB', '900'),
+(3, 'Samsung 1TB M.2 PCIe Gen5 NVMe 990 EVO PLUS', 'Samsung', '1TB', '1100'),
+(4, 'Samsung 2TB M.2 PCIe Gen4 NVMe 990', 'Samsung', '2TB', '1600'),
+(5, 'Lexar 2TB M.2 PCIe Gen5 NVMe NM990', 'Lexar', '2TB', '1750'),
+(6, 'Samsung 2TB M.2 PCIe Gen5 NVMe 9100 PRO', 'Samsung', '2TB', '2700');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `thermo`
+--
+
+CREATE TABLE `thermo` (
+  `id` int(200) NOT NULL,
+  `Nazwa` varchar(200) NOT NULL,
+  `producent` varchar(2002) NOT NULL,
+  `typ` varchar(200) NOT NULL,
+  `cena` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `thermo`
+--
+
+INSERT INTO `thermo` (`id`, `Nazwa`, `producent`, `typ`, `cena`) VALUES
+(1, 'ARCTIC MX-6 4g', 'ARCTIC', 'pasta', '40'),
+(2, 'Corsair XTM60 3g', 'Corsair', 'pasta', '50'),
+(3, 'Thermal Grizzly Kryonaut 5,55g', 'Thermal Grizzly', 'pasta', '95'),
+(4, 'SMX Verde PTM 40 x 40 mm x2', 'SMX', 'PTM', '50'),
+(5, 'Thermal Grizzly KryoSheet 38 x 38 mm', 'Thermal Grizzly', 'pad', '95'),
+(6, 'Thermal Grizzly Conductonaut 5g', 'Thermal Grizzly', 'metal', '200');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -209,9 +287,27 @@ ALTER TABLE `motherboard`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeksy dla tabeli `psu`
+--
+ALTER TABLE `psu`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeksy dla tabeli `ram`
 --
 ALTER TABLE `ram`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeksy dla tabeli `ssd`
+--
+ALTER TABLE `ssd`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeksy dla tabeli `thermo`
+--
+ALTER TABLE `thermo`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -243,10 +339,28 @@ ALTER TABLE `motherboard`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
+-- AUTO_INCREMENT for table `psu`
+--
+ALTER TABLE `psu`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `ram`
 --
 ALTER TABLE `ram`
   MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `ssd`
+--
+ALTER TABLE `ssd`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `thermo`
+--
+ALTER TABLE `thermo`
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

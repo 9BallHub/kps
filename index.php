@@ -121,7 +121,7 @@ FAQ</a></p>
 <select id="cpuchoice">
 <?php
 $connect = mysqli_connect("localhost", "root", "", "sdkkbase") OR DIE("ZDYCHAJ");
-$sql1 = "SELECT `Name`, `socket` FROM `cpu` ORDER BY id DESC;";
+$sql1 = "SELECT `Name`, `socket` FROM `cpu` ORDER BY socket DESC;";
 $query1=mysqli_query($connect,$sql1);
 while($row=mysqli_fetch_array($query1))
 {
