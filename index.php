@@ -27,7 +27,8 @@ $specificAnswers = [
     "amd or intel" => "intel",
     "intel or amd" => "amd",
     "hot man" => "https://www.instagram.com/p/C5hnkaIoU3j/",
-    "praca" => "GET A JOB NIGGA"
+    "praca" => "GET A JOB NIGGA",
+    "y are you gay" => "u are gay"
 ];
 
 // Random answers for anything that isn't specifically defined
@@ -86,6 +87,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </a>
 <p><a href="faq.php">
 FAQ</a></p>
+<p><a href="https://choroszcz.pl/">Sponsor</a></p>
+<p><a href="https://www.google.com/search?client=firefox-b-d&hs=Jl6V&sca_esv=0adcf06bd624d4eb&sxsrf=APpeQnssndi7c5JvKAXAnlgPFrHrYNGGUQ:1791441419307&udm=2&fbs=ABfTbFX9375dmYLUBFpyRgnU-XoZp6jAVSqfKhVSjM9DAAQ6meU2hKpgJocChk9NMsbqLBQfl4Cc99spmknRV0fkug4LjmueIpkVKQNUtTiTAIUqJ08CndBBmCU1_uyKXzb904Df5HhpfgmWxpqHBt-sr4Z22oYFK53sywn8jQ5tSuTaxedQlJHZthlvqU2MRTCNETBSZrNPw82o1VMwwgDSAz88-9YNgQ&q=cat+pictures&sa=X&ved=2ahUKEwit4Lur56mXAxURCBAIHY2-HXwQtKgLegQIEhAB&biw=1920&bih=946&dpr=1"
+>Kotki</a></p>
+<p><a href="https://www.google.com/maps/place/Fort+Gay+Elementary/@38.1150502,-82.5925814,19.37z/data=!4m10!1m2!2m1!1sschool+w+pobli%C5%BCu+Fort+Gay,+Wirginia+Zachodnia,+Stany+Zjednoczone!3m6!1s0x8845c04f6a1442bd:0x425333df428cba6b!8m2!3d38.1146545!4d-82.5917129!15sCkFzY2hvb2wgdyBwb2JsacW8dSBGb3J0IEdheSwgV2lyZ2luaWEgWmFjaG9kbmlhLCBTdGFueSBaamVkbm9jem9uZZIBEWVsZW1lbnRhcnlfc2Nob29s4AEA!16s%2Fm%2F0765pxf?entry=ttu&g_ep=EgoyMDI2MTAwNS4wIKXMDSoASAFQAw%3D%3D"
+>Nasza lokalizacja</a></p> 
+<p><a href="https://www.google.com/maps/place/Synagoga+Folk+Valley/@52.3100225,21.1596814,15.29z/data=!4m10!1m2!2m1!1sfolk+valley!3m6!1s0x471ecf0018fd4f37:0xad3143bddd1d0ac1!8m2!3d52.310056!4d21.167451!15sCgtmb2xrIHZhbGxleZIBCXN5bmFnb2d1ZeABAA!16s%2Fg%2F11zgmck0j2?entry=ttu&g_ep=EgoyMDI2MTAwNS4wIKXMDSoASAFQAw%3D%3D">Znajdzesz nas też tutaj</a></p>
 
 <section id="advert">
  <a href="https://www.youtube.com/watch?v=UP1mKveeNIA" target="_blank"> <img id="adve" src="adv.png" /></a>
@@ -183,6 +190,58 @@ echo "<option>".$row['Nazwa']." ".$row['ddr']."</option>";
 
 
 </select>
+Obudowa
+<select id="casechoice">
+    <?php
+$sql7 = "SELECT `Nazwa`,`typ` FROM `casepc` ORDER BY `Nazwa` ASC;";
+$query7=mysqli_query($connect,$sql7);
+while($row=mysqli_fetch_array($query7))
+{
+echo "<option>".$row['Nazwa']." ".$row['typ']."</option>";
+}
+?>
+
+
+</select>
+
+</br>Zasilacz
+<select id="psuchoice">
+    <?php
+$sql6 = "SELECT `Nazwa`,`moc` FROM `psu` ORDER BY `moc` DESC;";
+$query6=mysqli_query($connect,$sql6);
+while($row=mysqli_fetch_array($query6))
+{
+echo "<option>".$row['Nazwa']." ".$row['typ']."</option>";
+}
+?>
+
+
+</select>
+
+</select>
+</br>Dysk SSD
+<select id="ssd">
+    <?php
+$sql8 = "SELECT `Nazwa`,`pojemnosc` FROM `ssd` ORDER BY `pojemnosc` ASC;";
+$query8=mysqli_query($connect,$sql8);
+while($row=mysqli_fetch_array($query8))
+{
+echo "<option>".$row['Nazwa']." ".$row['pojemnosc']."</option>";
+}
+?>
+</select>
+
+</br>Materiał termo
+<select id="thermo">
+    <?php
+$sql9 = "SELECT `Nazwa`,`typ` FROM `thermo` ORDER BY `typ` DESC;";
+$query9=mysqli_query($connect,$sql9);
+while($row=mysqli_fetch_array($query9))
+{
+echo "<option>".$row['Nazwa']." ".$row['typ']."</option>";
+}
+?>
+</select>
 
 </form>
 </section>
@@ -215,7 +274,7 @@ XDDD
 
 <form method="POST">
     <input type="text" name="myInput" placeholder="Ask the magic 8ball">
-    <button type="submit">Generate</button>
+    <button type="submit">Zapytaj</button>
 </form>
 
 <section id="answers">
