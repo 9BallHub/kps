@@ -262,9 +262,18 @@ echo "<option>".$row['Nazwa']." ".$row['typ']."</option>";
 
 
 <section id="pricing">
-content2</br>
-XDDD</br>
-XDDD
+cpu: </br>
+mobo: </br>
+bpu: </br>
+cooler: </br>
+ram: </br>
+case: </br>
+psu: </br>
+ssd: </br>
+therm: </br>
+
+CENA:
+
 </section>
 
 <section id="chatbox">
