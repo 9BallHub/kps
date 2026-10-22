@@ -73,7 +73,7 @@ padding:20px;
 
 #pricing
 {
-
+font-size:20px;
 height:700px;
 width:279px;
 background:#505264;
@@ -136,5 +136,8 @@ float:right;
 
 
 }
-
+#total-price
+{
+font-size:35px;
+}
 
