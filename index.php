@@ -27,8 +27,8 @@ $specificAnswers = [
     "amd or intel" => "intel",
     "intel or amd" => "amd",
     "hot man" => "https://www.instagram.com/p/C5hnkaIoU3j/",
-    "praca" => "GET A JOB NIGGA",
-    "y are you gay" => "u are gay"
+    "praca" => "GET A JOB beegaA",
+    "y are you gay" => "u are gae"
 ];
 
 // Random answers for anything that isn't specifically defined
@@ -40,7 +40,7 @@ $randomAnswers = [
     "Interesting choice!",
     "Zawiodłem się na tobie",
     "Im Bored.exe",
-    "a fat feminist is smarter than that",
+    "a fat fmakle is smarter than that",
     "nah bro intel arc",
     "Yes",
     "HELL NAH",
