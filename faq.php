@@ -202,8 +202,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
 =================================================== -->
 
 <section id="pricing">
-<img src="spin2.gif">
-<a href="https://www.youtube.com/watch?v=_Wep0VVzBGU">Win 11 Debloat</a>
+<a target="_blank" href="https://www.google.com/maps/place/Epstein+Island/@49.045952,12.1215991,19.75z/data=!4m12!1m2!2m1!1sepstein+island+google+maps!3m8!1s0x479fc1004895c43f:0x94ccb2a2e64d4b66!8m2!3d49.045939!4d12.1222108!9m1!1b1!15sChplcHN0ZWluIGlzbGFuZCBnb29nbGUgbWFwcyIDiAEBkgEKcGxheWdyb3VuZOABAA!16s%2Fg%2F11wql5byf5?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">
+<img id="wujo"  src="wujek.png">
+        </a>
+<a href="https://www.youtube.com/watch?v=_Wep0VVzBGU">Win 11 Debloat</a></br>
+<a href="https://www.youtube.com/watch?v=IVVJ-9xBcPw">Bios flash</a></br>
+keystrokeskeystrokes</br>
+keystrokeskeystrokes</br>
+keystrokeskeystrokes</br>
+keystrokeskeystrokes</br>
+keystrokeskeystrokes</br>
+keystrokeskeystrokes</br>
+keystrokeskeystrokes</br>
+
+
 
     
 </section>
