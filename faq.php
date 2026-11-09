@@ -206,14 +206,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
 <img id="wujo"  src="wujek.png">
         </a>
 <a href="https://www.youtube.com/watch?v=_Wep0VVzBGU">Win 11 Debloat</a></br>
-<a href="https://www.youtube.com/watch?v=IVVJ-9xBcPw">Bios flash</a></br>
-keystrokeskeystrokes</br>
-keystrokeskeystrokes</br>
-keystrokeskeystrokes</br>
-keystrokeskeystrokes</br>
-keystrokeskeystrokes</br>
-keystrokeskeystrokes</br>
-keystrokeskeystrokes</br>
+<a href="https://www.youtube.com/watch?v=IVVJ-9xBcPw">Bios flash</a></br></br>
+<b>-Lepsze aletrnatywy-</b></br>
+<a href="https://pl.pcpartpicker.com/">PcPartPicker</a></br>
+<a href="https://www.buildcores.com/">BuildCores(3D)</a></br></br>
+<b>-Polcane Sklepy-</b></br>
+<a href="https://www.x-kom.pl/">x-kom</a></br>
+<a href="https://www.morele.net/podzespoly-komputerowe/podzespoly-komputerowe/">morele</a></br>
+<a href="https://www.komputronik.pl/category/5805/czesci-pc.html">Komputronik</a></br>
 
 
 

@@ -73,7 +73,7 @@ padding:20px;
 
 #pricing
 {
-font-size:30px;
+font-size:18px;
 height:700px;
 width:279px;
 background:#505264;
@@ -81,6 +81,11 @@ float:left;
 box-shadow:5px 10px 30px #8c9099;
 text-decoration: none;
 color:#52d6d0
+}
+
+span
+{
+font-size:30px;
 }
 
 
@@ -149,9 +154,12 @@ font-size:35px;
 a
 {
 text-decoration: none;
-color:#52d6d0
+color:#52d6d0;
 }
 #wujo
 {
 width:280px;
+}
+#pricing span {
+    font-size: 18px;
 }
