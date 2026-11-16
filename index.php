@@ -78,7 +78,9 @@ $specificAnswers = [
     "intel or amd" => "amd",
     "hot man" => "https://www.instagram.com/p/C5hnkaIoU3j/",
     "praca" => "GET A JOB beegaA",
-    "y are you gay" => "u are gae"
+    "y are you gay" => "u are gae",
+    "cj" => "OOOOOHH MYYY DOOOOGG WAZZAP MAN",
+    "wina" => "tuska"
 ];
 
 $randomAnswers = [
@@ -116,6 +118,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
             $image = "hotlettuce.png";
         } elseif (strtolower($input) === "praca") {
             $image = "job.png";
+        } elseif (strtolower($input) === "cj") {
+            $image = "smallfog.gif";
+        } elseif (strtolower($input) === "wina") {
+            $image = "tuskotronik.gif";
         }
     }
 }
