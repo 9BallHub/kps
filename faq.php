@@ -137,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
     <p><a href="https://choroszcz.pl/">Sponsor</a></p>
 
     <p>
-        <a target="_blank" href="https://www.google.com/search?tbm=isch&q=cat+pictures">
+        <a target="_blank" href="https://www.google.com/search?q=catgril&client=firefox-b-d&hs=BYMW&sca_esv=8bd334090ad29635&udm=2&biw=1278&bih=938&sxsrf=AKL5yDh8xZg1kk7nLyd0QjOPmRgaspp0vQ%3A1795082803910&ei=M8r-avSSN6-R1fIPltPKEQ&ved=2ahUKEwi0-PnG5JOYAxWvSFUIHZapMgIQ4dUDegQIBhAN&uact=5&oq=catgril&gs_lp=Egtnd3Mtd2l6LWltZyIHY2F0Z3JpbDIKEAAYgAQYigUYQzIPEAAYgAQYChgLGLEDGIMBMgoQABiABBiKBRhDMgkQABiABBgKGAsyCRAAGIAEGAoYCzIJEAAYgAQYChgLMgkQABiABBgKGAsyCRAAGIAEGAoYCzIJEAAYgAQYChgLMgkQABiABBgKGAtIwQ1Q6wJY_AtwAXgAkAEAmAExoAGxAqoBATe4AQPIAQD4AQGYAgegAuMCwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICBRAAGIAEwgINEAAYgAQYigUYQxixA8ICDBAAGIAEGAoYCxixA8ICBxAAGIAEGAqYAwCIBgGSBwE3oAe4IrIHATe4B-MCwgcDMi03yAchgAgB&sclient=gws-wiz-img">
             Kotki
         </a>
     </p>
@@ -186,7 +186,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
 =================================================== -->
 
 <section id="choice">
+<p><a href="https://www.youtube.com/watch?v=s1fxZ-VWs2U" target="_blank">Budowa PC w skrócie</a></p>
+<section id="pcbuild">
 
+①Otwórz opakowania i upewnij sie, że wszystko jest w dobrym stanie.</br>
+② Na stole połóż pudełko od płyty głównej, imieść na niej właśie płytę.</br>
+③ Zainstaluj z tyłu płyty mocowania chłodzenia procesora i dystanse do obudowy.</br>
+④ Otwórz gniazdo procesora, umieść go w środku i zaciągnij dźwignię.</br>
+⑤ Odciągnij dzwigięki DIMM i zainstaluj RAM.</br>
+⑥ (w razie m.2) Oderwij od dysku taśmę ochronną, włóż pod kątem przymocuj/przykręć w slot.</br>
+⑦ Zdejmij płytę z pudełka i przykręć ją do obudowy.</br>
+⑧ Zamocuj do obudowy zasilacz i wykonaj okablowanie elektryczne.</br>
+<a href="spin2.gif">⑨</a> Zaaplikuj pastę termo na CPU i zainstaluj chłodzenie.</br>
+⑩ Zepnij kable Panelu Przedniego</br>
+⑪ W razie braku wbudowanych, zainstaluj wiatraki.</br>
+⑫ (w razie dysku SATA) Wepnij go teraz.</br>
+⑬ Zaistaluj kartę graficzną.</br>
+⑭ Wepnij ODPOWIEDNIE zasilenie do karty graficznej.</br>
+⑮ Wepnij kabel zasilający do PSU i podłącz karte graficzną do ekranu.</br>
+⑯ Wykonaj pierwszy start i zainstaluj system operacyjny.</br>
+⑰ Zainstaluj sterowniki i oprogramowanie anytwirusowe, zaktualizuj BIOS.... Et voilà la!
+
+
+</section>
     
 
     <section id="obrazki">

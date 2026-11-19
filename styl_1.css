@@ -164,3 +164,10 @@ width:280px;
 #pricing span {
     font-size: 18px;
 }
+
+#pcbuild
+{
+overflow:auto;
+width:1400px;
+height:600px;
+}
