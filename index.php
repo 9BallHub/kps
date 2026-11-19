@@ -171,15 +171,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
 <section id="head">
     <img id="logo" src="sdkk solutions 100.png" alt="SDKK Solutions">
 
-    <a href="czekibreki.png">
-        <img id="system" src="system 100.png" alt="System">
-    </a>
-
-    <img
+     <img
         src="blackyellow.png"
         alt="Zmień motyw"
         onclick="document.body.classList.toggle('dark-theme')"
     >
+   
+
+    <a href="czekibreki.png">
+        <img id="system" src="system 100.png" alt="System">
+    </a>
+
+   
 </section>
 
 <!-- ==================================================

@@ -175,6 +175,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["myInput"])) {
         alt="Zmień motyw"
         onclick="document.body.classList.toggle('dark-theme')"
     >
+     <img id="wtf2" src="wtf2.gif">
 
      <a href="czekibreki.png">
         <img id="system" src="system 100.png" alt="System">
